@@ -1,0 +1,152 @@
+body::-webkit-scrollbar {
+  display: block !important;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+div.carregando h4 {
+	color: red !important;
+	font-size: 14px !important;
+}
+
+div.search {
+	float: right;
+}
+
+div.search a {
+	background: #333;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin: 0 0 0 20px;
+}
+
+.posts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #333;
+	max-width: 300px;
+	height: 420px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 28px -8px rgba(0,0,0,0.75);
+	margin: 30px 15px 30px 15px;
+}
+
+.post_cat {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #333;
+	max-width: 300px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 28px -8px rgba(0,0,0,0.75);
+	margin: 30px 15px 30px 15px;
+}
+
+.img_post {
+	width: 300px;
+	height:230px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+div.title_page_category h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+.title_post {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.date_post, .category_post {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 15px;
+	color: #333;
+}
+
+.category_post {
+	text-decoration: underline;
+}
+
+.url_post {
+	text-align: center;
+	margin-top: 20px;
+	background: #333;
+	color: #fff;
+	padding: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-back {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 1.125em;
+}
+
+div.categorie {
+	display: inline-block;
+	margin: 0 20px 0 20px;
+	text-align: center;
+}
+
+/* Loading */
+.loader {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.loader h3 {
+	font-size: 16px;
+	margin: 0 0 10px 0;
+}
+
+.loader span{
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+	background-color: #3498db;
+	margin-left: 5px;
+}
+
+.loader span:nth-child(1){animation: grow 1s ease-in-out infinite;}
+.loader span:nth-child(2){animation: grow 1s ease-in-out 0.15s infinite;}
+.loader span:nth-child(3){animation: grow 1s ease-in-out 0.30s infinite;}
+.loader span:nth-child(4){animation: grow 1s ease-in-out 0.45s infinite;}
+
+@keyframes grow{
+  0%, 100%{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50%{
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
