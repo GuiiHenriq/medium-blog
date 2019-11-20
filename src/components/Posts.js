@@ -162,17 +162,17 @@ export default class Posts extends Component {
           <div className="title_post"></div>
           <div className="date_post"></div>
           <Link to={'/categorias?id=' + post.elements[3].elements[0].cdata} className="category_post"></Link>
-          <Link to={'/post?id=' + post.elements[2].elements[0].text.split("/p/")[1]} className="url_post">LEIA MAIS</Link>
+          <Link to={'/post?id=' + post.elements[2].elements[0].text.split("/p/")[1]} className="url_post">Leia Mais →</Link>
         </div>
       );
     });
 
     return (
       <div>
-        <Link className="btn-back" to="/">VOLTAR</Link>
+        <Link className="btn-back" to="/">🡄</Link>
 
         <div className="search">
-          <input type="text" onChange={() => this.setState({ valueInput: this.inputSearch.current.value })} onKeyDown={this.handleKeyDown} ref={this.inputSearch}></input>
+          <input type="text" onChange={() => this.setState({ valueInput: this.inputSearch.current.value })} onKeyDown={this.handleKeyDown} ref={this.inputSearch} placeholder="Pesquisar..."></input>
           <Link ref={this.linkSearch} className="link-search" to={'/search?id=' + this.state.valueInput}>Pesquisar</Link>
         </div>
 
@@ -186,13 +186,16 @@ export default class Posts extends Component {
           </div>
         </div>
 
-        <div className="posts-categorie" ref={this.categories}>
-          <h3>Categorias:</h3>{categoriesJson}
-        </div>
+        <section className="blog">
+          <div className="posts" ref={this.posts}>
+            {postsJson}
+          </div>
 
-        <div className="posts" ref={this.posts}>
-          {postsJson}
-        </div>
+          <div className="posts-categorie" ref={this.categories}>
+            <h3>Categorias:</h3>{categoriesJson}
+          </div>
+        </section>
+
       </div>
     )
   }

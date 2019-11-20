@@ -4,7 +4,7 @@
 
 ## O Que é
 **Para você que deseja adicionar as postagens do Medium em seu site, esse projeto irá te ajudar!**
-**Antigamente o Medium fornecia uma API para realizar isso, mas essa API foi descontinuada. Mas através do XML que o Medium fornece construímos esse projeto, que falando a "modo grosso" ele puxa as postagens do XML e renderiza no view.
+Antigamente o Medium fornecia uma API para realizar isso, mas essa API foi descontinuada. Mas através do XML que o Medium fornece construímos esse projeto, que falando a "modo grosso" ele puxa as postagens do XML e renderiza no view.
 
 ## Como Usar
 

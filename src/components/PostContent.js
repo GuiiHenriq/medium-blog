@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import convert from 'xml-js';
 import { Link } from 'react-router-dom';
-import '../PostAberto.css';
+import '../PostContent.css';
 
 export default class PostContent extends Component {
 
@@ -79,7 +79,7 @@ export default class PostContent extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">VOLTAR</Link>
+        <Link className="btn-back" to="/">🡄</Link>
 
         <div className="loading" ref={this.postLoading}>
           <div className="loader">

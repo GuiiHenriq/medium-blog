@@ -177,7 +177,7 @@ export default class Search extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">VOLTAR</Link>
+        <Link className="btn-back" to="/">🡄</Link>
         <div className="title_page_category"><h1>Resultado: <b>{this.state.paramNormalUrl}</b></h1></div>
 
         <div className="loading" ref={this.postLoading}>
