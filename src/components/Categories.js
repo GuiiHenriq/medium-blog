@@ -141,7 +141,10 @@ export default class Categories extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">🡄</Link>
+        <section className="header">
+          <Link className="btn-back" to="/">🡄</Link>
+        </section>
+
         <div className="title_page_category"><h1>Categoria:&nbsp;<b>{this.state.paramUrl}</b></h1></div>
 
         <div className="loading" ref={this.postLoading}>

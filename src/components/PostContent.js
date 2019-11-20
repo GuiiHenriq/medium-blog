@@ -79,7 +79,9 @@ export default class PostContent extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">🡄</Link>
+        <section className="header">
+          <Link className="btn-back" to="/">🡄</Link>
+        </section>
 
         <div className="loading" ref={this.postLoading}>
           <div className="loader">

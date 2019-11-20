@@ -177,8 +177,11 @@ export default class Search extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">🡄</Link>
-        <div className="title_page_category"><h1>Resultado: <b>{this.state.paramNormalUrl}</b></h1></div>
+        <section className="header">
+          <Link className="btn-back" to="/">🡄</Link>
+        </section>
+
+        <div className="title_page_category"><h1>Resultado:&nbsp;<b>{this.state.paramNormalUrl}</b></h1></div>
 
         <div className="loading" ref={this.postLoading}>
           <div className="loader">

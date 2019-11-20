@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body {font-family: 'Roboto', sans-serif !important}
+body, button, input {font-family: 'Roboto', sans-serif !important}
 
 a {
 	text-decoration: none;
@@ -18,16 +18,43 @@ div.carregando h4 {
 	flex-direction: row;
 }
 
-div.search {
-	float: right;
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #333;
+	height: 50px;
+	margin-bottom: 20px;
 }
 
-div.search a {
-	background: #333;
+.btn-back {
+	font-weight: bold;
+	font-size: 1.7em;
+	margin-left: 30px;
+	color: #fff;
+}
+
+.btn-back:hover {
+	color: #ccc;
+}
+
+.search {
+	margin-right: 30px;
+}
+
+.search input {
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.search a {
+	background: #007bff;
+	border-radius: 5px;
 	color: white;
 	padding: 5px;
 	text-align: center;
-	margin: 0 0 0 20px;
 }
 
 .posts {
@@ -47,7 +74,7 @@ div.search a {
 	height: 420px;
 	padding: 30px;
 	border-radius: 5px;
-	margin: 30px 15px 30px 15px;
+	margin: 0 20px 30px 20px;
 }
 
 .post_cat {
@@ -106,13 +133,6 @@ div.title_page_category h1 {
 	background: #016bdd;
 }
 
-.btn-back {
-	font-weight: bold;
-	margin-top: 10px;
-	margin-left: 10px;
-	font-size: 1.7em;
-}
-
 .categorie {
 	display: flex;
 	flex-direction: row;
@@ -120,6 +140,25 @@ div.title_page_category h1 {
 
 .posts-categorie {
 	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 250px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.posts-categorie h3 {margin: 0}
+
+.posts-categorie a {
+	color: #007bff;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.posts-categorie a:hover {
+	text-decoration: underline;
 }
 
 /* Loading */

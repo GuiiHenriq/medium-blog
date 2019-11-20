@@ -169,12 +169,15 @@ export default class Posts extends Component {
 
     return (
       <div>
-        <Link className="btn-back" to="/">🡄</Link>
 
-        <div className="search">
-          <input type="text" onChange={() => this.setState({ valueInput: this.inputSearch.current.value })} onKeyDown={this.handleKeyDown} ref={this.inputSearch} placeholder="Pesquisar..."></input>
-          <Link ref={this.linkSearch} className="link-search" to={'/search?id=' + this.state.valueInput}>Pesquisar</Link>
-        </div>
+        <section className="header">
+          <Link className="btn-back" to="/">🡄</Link>
+
+          <div className="search">
+            <input type="text" onChange={() => this.setState({ valueInput: this.inputSearch.current.value })} onKeyDown={this.handleKeyDown} ref={this.inputSearch} placeholder="Pesquisar..."></input>
+            <Link ref={this.linkSearch} className="link-search" to={'/search?id=' + this.state.valueInput}>Go!</Link>
+          </div>
+        </section>
 
         <div className="loading" ref={this.postLoading}>
           <div className="loader">
